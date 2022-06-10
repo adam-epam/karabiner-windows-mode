@@ -1,15 +1,15 @@
-.SILENT: check format render
+.SILENT: check render
 
-default: check format
+default: check render
 
 check:
 	echo "checking..."
-	.github/render_json.sh ./jsonnet /dev/null
+	.github/scripts/render_json.sh ./jsonnet /dev/null
 
 format:
 	echo "formatting..."
-	.github/jsonnet_fmt.sh
+	.github/scripts/jsonnet_fmt.sh
 
 render:
 	echo "rendering..."
-	.github/render_json.sh ./jsonnet ./json
+	.github/scripts/render_json.sh ./jsonnet ./json
