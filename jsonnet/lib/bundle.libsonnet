@@ -50,7 +50,7 @@
   // bundle identifiers for web browser applications
   webBrowsers: [
     // Google Chrome
-    '^com\\.google\\.chrome$',
+    'com.google.Chrome',
     // Mozilla Firefox
     '^org\\.mozilla\\.firefox$',
   ],
@@ -61,6 +61,5 @@
     $.ides +
     $.remoteDesktops +
     $.terminalEmulators +
-    %.webBrowsers +
     [],  // unnecessary, but it allows the '$.foo +'-style for the preceeding lines, which makes my OCD happy
 }
