@@ -61,5 +61,6 @@
     $.ides +
     $.remoteDesktops +
     $.terminalEmulators +
+    %.webBrowsers +
     [],  // unnecessary, but it allows the '$.foo +'-style for the preceeding lines, which makes my OCD happy
 }
